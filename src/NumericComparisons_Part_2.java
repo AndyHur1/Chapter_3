@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class NumericComparisons_Part_2 {
 
 
-    public static boolean isFactor(int num_1, int num_2) {
+    private static boolean isFactor(int num_1, int num_2) {
 
         return num_2 % num_1==0;
     }
-    public static boolean isMultiple(int num_1, int num_2) {
+    private static boolean isMultiple(int num_1, int num_2) {
 
         return num_1 % num_2==0;
     }
