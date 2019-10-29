@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ShareDigit {
 
-    private static boolean share_digits (int x1,int x2){
+    public static boolean numbers (int x1,int x2){
 
         if (x1/10==x2/10){
             return true;
@@ -22,8 +22,8 @@ public class ShareDigit {
 
 
     public static void main(String[] args){
-        System.out.println(share_digits(12,23));
-        System.out.println(share_digits(12,43));
-        System.out.println(share_digits(12,44));
+        System.out.println(numbers(12,23));
+        System.out.println(numbers(12,43));
+        System.out.println(numbers(12,44));
     }
 }

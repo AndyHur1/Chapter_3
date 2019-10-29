@@ -2,13 +2,15 @@ import java.util.Scanner;
 
 public class SlopeOfTheLine {
 
-    private static String slope(int x1, int y1, int x2, int y2) {
+    public static String slope(int x1, int y1, int x2, int y2) {
 
         if (x1 == x2) {
-            return "The line defined by the points ("+x1+","+y1+") and ("+x2+","+y2+") is a vertical line and the slope is undefined.";
+            return "The line defined by the points ("+x1+", "+y1+") and ("+x2+", "+y2+") is a vertical line and the slope is undefined.";
         } else {
-            double slope = (y2 - y1) / (x2 - x1);
-            return "The line defined by the points ("+x1+","+y1+") and ("+x2+","+y2+") has a slope of "+slope;
+            double slope_1 = (y2 - y1);
+            double slope_2 = (x2 - x1);
+            double slope = slope_1/slope_2;
+            return "The line defined by the points ("+x1+", "+y1+") and ("+x2+", "+y2+") has a slope of "+slope;
         }
 
 
