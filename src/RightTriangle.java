@@ -10,6 +10,12 @@ public class RightTriangle {
                 return false;
 
     }
+    public static Boolean isTriangle(int a, int b, int c){
+        if(a+b>c && b+c>a && a+c>b)
+            return true;
+        else
+            return false;
+    }
 
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
@@ -20,10 +26,10 @@ public class RightTriangle {
         if(isRight(length_1,length_2,length_3)==true)
             System.out.println("The side lengths of "+length_1+","+length_2+","+" and "+length_3+" form a right triangle");
         else if(isRight(length_1,length_2,length_3)==false)
-            if(length_1+length_2<length_3 && length_1+length_3<length_2 && length_2+length_3<length_1)
-                System.out.println("The side lengths of "+length_1+","+length_2+","+" and "+length_3+" form a triangle," +
+            if(length_1+length_2>length_3 && length_1+length_3>length_2 && length_2+length_3>length_1)
+                System.out.println("The side lengths of "+length_1+", "+length_2+" ,"+" and "+length_3+" form a triangle," +
                         " but it is not a right triangle");
             else
-        System.out.println("The side lengths of "+length_1+","+length_2+","+" and "+length_3+" do not form a triangle");
+        System.out.println("The side lengths of "+length_1+" 12, "+length_2+", "+"and "+length_3+" do not form a triangle");
     }
 }
