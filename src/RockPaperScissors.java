@@ -16,26 +16,30 @@ public class RockPaperScissors {
         else
             return "paper";
     }
-    public static String whoWins(String computer, String person){
-        String user_win = "You Win!";
+    public static String whoWins(String computer, String person) {
+        String user_win = "You win!";
         String com_win = "The computer wins!";
-        String tie = "You Tied!";
+        String tie = "You tied!";
+        String winner_1;
 
-        if (computer.equals(person))
-            return tie;
-        else if (computer.equals("rock")&&person.equals("paper"))
-            return user_win;
-        else if (computer.equals("rock")&&person.equals("scissors"))
-            return com_win;
-        else if (computer.equals("paper")&&person.equals("rock"))
-            return com_win;
-        else if (computer.equals("paper")&&person.equals("scissors"))
-            return user_win;
-        else if (computer.equals("scissors")&&person.equals("rock"))
-            return user_win;
-        else if (computer.equals("scissors")&&person.equals("paper"))
-            return com_win;
-        else return "invalid";
+        if (computer.equals(person)) {
+            winner_1 = tie;
+        } else if
+            (computer.equals("rock") && person.equals("paper")){
+            winner_1 = user_win;
+        }else if (computer.equals("rock") && person.equals("scissors")){
+            winner_1 = com_win;
+    }else if (computer.equals("paper")&&person.equals("rock")){
+
+        } else if (computer.equals("paper")&&person.equals("scissors")) {
+            winner_1 = user_win;
+        }else if (computer.equals("scissors")&&person.equals("rock")) {
+            winner_1 = user_win;
+        }else if (computer.equals("scissors")&&person.equals("paper")) {
+            winner_1 = com_win;
+        }else return "invalid";
+
+        return "You chose "+person+".\n"+"The computer chose "+computer+"."+"\n"+winner_1;
     }
     public static void main(String[] args){
         String user_choice = getUserChoice();
