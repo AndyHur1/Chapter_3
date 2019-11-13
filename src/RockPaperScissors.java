@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/*Andy Hur
+* 11/13/2019
+* RockPaperScissors Program */
 public class RockPaperScissors {
     public static String getUserChoice(){
         Scanner scan = new Scanner(System.in);
@@ -20,6 +23,7 @@ public class RockPaperScissors {
         String user_win = "You win!";
         String com_win = "The computer wins!";
         String winner_1;
+        /*Setting up the all the possible cases between player and computer */
 
         if (computer.equals(person)) {
             winner_1 = "You tied!";
